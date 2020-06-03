@@ -17,10 +17,6 @@
 
 const log = console.log;
 
-const pretty: string = `hello world!`;
-
-log(pretty);
-
 interface Person {
   name: string,
   age: number,
@@ -51,6 +47,7 @@ Student.prototype.getInfos = function () {
   return `Student infos: name = ${this.name}, age = ${this.age}`;
 }
 
+
 const s1 = new (Student as any)('elite', 23);
 
 log(s1.getInfos())
@@ -58,3 +55,11 @@ log(s1.getInfos())
 // let s1: Person = new Student('elite', 23);
 // const s1 = new Student('elite', 23);
 // 'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.
+
+/*
+
+Duplicate function implementation.
+
+Cannot redeclare block-scoped variable 's1'.
+
+*/

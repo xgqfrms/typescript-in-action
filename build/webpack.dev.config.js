@@ -1,8 +1,8 @@
 // const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
-  // devtool: 'source-map',
+  // devtool: 'cheap-module-eval-source-map',
+  devtool: 'source-map',
   // devtool: 'inline-source-map',
   mode: 'development',
   // plugins: [

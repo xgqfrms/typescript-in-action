@@ -1,13 +1,16 @@
 module.exports = {
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "parserOptions": {
-      "project": "./tsconfig.json",
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  parserOptions: {
+    project: "./tsconfig.json",
   },
-  "extends": [
+  extends: [
     "plugin:@typescript-eslint/recommended",
   ],
-  "rules": {
+  rules: {
     "@typescript-eslint/no-inferrable-types": "off",
+  },
+  linterOptions: {
+    exclude: ["000-xyz/**"],
   },
 };

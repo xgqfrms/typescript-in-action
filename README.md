@@ -130,6 +130,11 @@ https://aka.ms/tsconfig.json
 
 ```
 
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+
 ## npm
 
 ```sh

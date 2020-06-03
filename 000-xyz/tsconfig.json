@@ -7,9 +7,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
+    // "sourceRoot": "./src",
     "allowJs": true,
     "checkJs": false,
     "noImplicitAny": false,
+    // "baseUrl": "./src",
     "locale": "zh-CN",
     "incremental": false
   },
