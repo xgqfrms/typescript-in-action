@@ -17,6 +17,7 @@
     "app": "webpack --mode=production --config ./build/webpack.config.js",
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
+    "stats": "webpack --config ./build/webpack.config.js --json > ./build/webpack-stats.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {

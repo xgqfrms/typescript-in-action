@@ -1,0 +1,172 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.43.0",
+  "hash": "52d28b64fab0b1f87886",
+  "time": 1104,
+  "builtAt": 1591176194857,
+  "publicPath": "",
+  "outputPath": "/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/build/dist",
+  "assetsByChunkName": {
+    "main": "webpack-plugin-demo.bundle.js"
+  },
+  "assets": [
+    {
+      "name": "webpack-plugin-demo.bundle.js",
+      "size": 9546,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "webpack-plugin-demo.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "webpack-plugin-demo.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "main",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 260,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "webpack-plugin-demo.bundle.js"
+      ],
+      "hash": "906867c83683c8aafc82",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "./src/index.ts",
+          "identifier": "/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/node_modules/ts-loader/index.js!/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/src/index.ts",
+          "name": "./src/index.ts",
+          "index": 0,
+          "index2": 0,
+          "size": 260,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/index.ts",
+              "loc": "main"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "\"use strict\";\n/**\n *\n * @author xgqfrms\n * @license MIT\n * @copyright xgqfrms\n * @created 2020-06-03\n * @modified\n *\n * @description TypeScript in Action\n * @augments\n * @example\n * @link\n *\n */\nvar log = console.log;\nvar pretty = \"hello world!\";\nlog(pretty);\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index.ts",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/index.ts",
+      "identifier": "/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/node_modules/ts-loader/index.js!/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/src/index.ts",
+      "name": "./src/index.ts",
+      "index": 0,
+      "index2": 0,
+      "size": 260,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/index.ts",
+          "loc": "main"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "\"use strict\";\n/**\n *\n * @author xgqfrms\n * @license MIT\n * @copyright xgqfrms\n * @created 2020-06-03\n * @modified\n *\n * @description TypeScript in Action\n * @augments\n * @example\n * @link\n *\n */\nvar log = console.log;\nvar pretty = \"hello world!\";\nlog(pretty);\n"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}

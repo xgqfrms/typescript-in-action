@@ -113,6 +113,23 @@ https://aka.ms/tsconfig.json
 
 ```
 
+```js
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",// umd
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "incremental": false
+    // Enable incremental compilation
+  }
+}
+
+```
+
 ## npm
 
 ```sh
@@ -135,6 +152,17 @@ $ yarn add -D ts-loader typescript
 
 
 $ webpack init
+
+```
+
+## webpack cli
+
+https://webpack.js.org/api/cli/
+
+```sh
+$ webpack --json > webpack-stats.json
+
+$ webpack --config ./build/webpack.config.js --json > ./build/webpack-stats.json
 
 ```
 
