@@ -134,6 +134,21 @@ https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
+### "noEmit": true – to not emit outputs.
+
+dev OK
+
+app Error
+
+```js
+{
+  "noEmit": false, // app
+  "noEmit": true, // dev
+}
+
+```
+
+https://www.techcartnow.com/typescript-checking-javascript-file-visual-studio-2017-checkjs-ts-check-ts-nocheck-ts-ignore/
 
 ## npm
 

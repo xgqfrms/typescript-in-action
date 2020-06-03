@@ -13,6 +13,7 @@
     "locale": "zh-CN",
     "incremental": false
   },
+  "compileOnSave": true,
   "include": [
     "src/**/*"
   ],
