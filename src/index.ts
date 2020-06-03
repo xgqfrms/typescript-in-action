@@ -17,7 +17,7 @@
 
 const log = console.log;
 
-const pretty = `hello world!`;
-// const pretty:string = `hello world!`;
+const pretty: string = `hello world!`;
 
+log(pretty);
 
