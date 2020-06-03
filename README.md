@@ -11,7 +11,6 @@ https://www.typescriptlang.org/play/
 
 ## install
 
-
 ```sh
 # macOS
 $ npm i -g typescript
@@ -21,10 +20,21 @@ $ tsc -v
 
 $ tsc -h
 
-$ tsc --init
+$ tsc --all
 
-# build ???
+# Enable incremental compilation
 $ tsc -i
 
+```
+
+## compile
+
+```sh
+# tsconfig.json
+$ tsc --init
+
+$ tsc helloworld.ts
 
 ```
+
+
