@@ -17,7 +17,8 @@ module.exports = {
     // filename: 'webpack-plugin-demo.bundle.js',
     // filename: '[name].[hash:8].js',
     filename: '[name].[chunkhash:8].js',
-    path: path.resolve(__dirname, '../dist')
+    path: './dist',
+    // path: path.resolve(__dirname, '../dist')
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
