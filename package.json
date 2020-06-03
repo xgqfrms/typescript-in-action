@@ -13,11 +13,14 @@
   ],
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
-    "app": "webpack --mode=production --config ./build/webpack.config.js",
+    "dev": "webpack-dev-server --config ./build/webpack.config.js",
+    "env": "export NODE_ENV=production",
+    "node-env": "export process.env.NODE_ENV=production",
+    "app": "webpack --env=NODE_ENV_production --mode=none --config ./build/webpack.config.js",
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
-    "stats": "webpack --config ./build/webpack.config.js --json > ./build/webpack-stats.json",
+    "stats": "webpack --config ./build/webpack.config.js --json > ./000-xyz/webpack-stats.json",
+    "profile": "webpack --config ./build/webpack.config.js --profile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
