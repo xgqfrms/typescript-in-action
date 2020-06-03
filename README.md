@@ -253,6 +253,10 @@ $ yarn remove webpack-clean-plugin webpack-html-plugin
 
 ```
 
+## html template
+
+https://github.com/jantimon/html-webpack-plugin#writing-your-own-templates
+
 ## shell scripts
 
 ```sh
@@ -342,4 +346,15 @@ $ yarn add react react-dom
 $ yarn add -D @types/react @types/react-dom @types/source-map
 
 ```
+
+## webpack-dev-server & auto open browser
+
+https://webpack.js.org/guides/development/#using-webpack-dev-server
+
+```sh
+$ webpack-dev-server --open
+
+```
+
+https://www.cnblogs.com/xgqfrms/p/13039022.html#4594888
 
