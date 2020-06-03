@@ -220,6 +220,16 @@ $ set NODE_ENV=production
 
 ```
 
+## process.env & process.argv
+
+```js
+const log = console.log;
+
+// log(`process.env =\n`, process.env)
+log(`process.argv =\n`, process.argv)
+
+```
+
 ## webpack plugins
 
 https://webpack.js.org/plugins/html-webpack-plugin/
