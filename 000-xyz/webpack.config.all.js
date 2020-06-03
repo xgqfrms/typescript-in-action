@@ -8,16 +8,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  // entry: './src/index.ts',
-  entry: {
-    'app': './src/index.ts',
-    // 'app': './src/index.tsx',
-  },
+  entry: './src/index.ts',
   output: {
-    // filename: 'webpack-plugin-demo.bundle.js',
-    // filename: '[name].[hash:8].js',
-    filename: '[name].[chunkhash:8].js',
-    path: path.resolve(__dirname, '../dist')
+    filename: 'webpack-plugin-demo.bundle.js',
+    path: path.resolve(__dirname, '../dist'),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
@@ -26,17 +20,14 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/i,
-        use: [{
-          loader: 'ts-loader',
-        }],
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
-    ],
+    ]
   },
-  // devtool: 'inline-source-map',
-  // mode: 'development',
+  devtool: 'inline-source-map',
+  mode: 'development',
   // mode: 'production',
-  // mode: 'none',
   plugins: [
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
@@ -45,9 +36,4 @@ module.exports = {
       // template: path.resolve(__dirname, '../public/index.html'),
     }),
   ],
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
 };

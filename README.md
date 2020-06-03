@@ -155,6 +155,15 @@ $ webpack init
 
 ```
 
+## webpack-cli
+
+https://github.com/webpack/webpack-cli
+
+```sh
+$ webpack-cli init
+
+```
+
 ## webpack cli
 
 https://webpack.js.org/api/cli/
@@ -163,6 +172,51 @@ https://webpack.js.org/api/cli/
 $ webpack --json > webpack-stats.json
 
 $ webpack --config ./build/webpack.config.js --json > ./build/webpack-stats.json
+
+
+$ webpack --profile
+
+```
+
+https://webpack.js.org/configuration/
+
+## webpack mode
+
+https://webpack.js.org/configuration/mode/
+
+> process.env.NODE_ENV
+
+If not set, webpack sets `production` as the default value for mode.
+
+```sh
+# string = 'production': 'none' | 'development' | 'production'
+$ webpack --mode=none
+$ webpack --mode=development
+$ webpack --mode=production
+```
+
+## process.env.NODE_ENV
+
+```sh
+$ process.env.NODE_ENV=production && webpack
+$ process.env.NODE_ENV=development && webpack
+
+```
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/13
+
+### linux & mac
+
+```sh
+# process.env.NODE_ENV="production"
+$ export NODE_ENV=production
+
+```
+
+### windows
+
+```cmd
+$ set NODE_ENV=production
 
 ```
 

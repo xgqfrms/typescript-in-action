@@ -1,13 +1,13 @@
 const merge = require('webpack-merge');
 
-const baseConfig = require('./webpack.base.config');
-const devConfig = require('./webpack.dev.config');
-const proConfig = require('./webpack.prod.config');
+const baseConfig = require('../build/webpack.base.config');
+const devConfig = require('../build/webpack.dev.config');
+const proConfig = require('../build/webpack.prod.config');
 
 const log = console.log;
 
 // log(`process.env =\n`, process.env)
-// log(`process.argv =\n`, process.argv)
+log(`process.argv =\n`, process.argv)
 // [
 //   '/Users/xgqfrms-mbp/.nvm/versions/node/v10.16.3/bin/node',
 //   '/Users/xgqfrms-mbp/Documents/GitHub/typescript-in-action/node_modules/.bin/webpack',
