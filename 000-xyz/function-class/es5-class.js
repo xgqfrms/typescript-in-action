@@ -87,7 +87,7 @@ Person.prototype.getGender = function(){
 p.getGender();
 // gender: man
 
-// append after instance & ES6 static method
+// append after instance & ES5 static method
 Person.getSex = function(person){
   const sex = `sex: ${person.gender}`;
   log(sex)
