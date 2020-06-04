@@ -42,18 +42,39 @@ interface Person {
 //   this.age = age;
 // }
 
-function Student(this: any, name: string, age: number): void {
+// function Student(this: any, name: string, age: number): void {
+//   this.name = name;
+//   this.age = age;
+// }
+
+function Student(this: any, name, age) {
   this.name = name;
   this.age = age;
+  this.getAge = function getAge() {
+    return this.age;
+  };
+  this.getName = function () {
+    return this.name;
+  }
 }
 
+// prototype method === class property methods ??? class static method
 Student.prototype.getInfos = function () {
   return `Student infos: name = ${this.name}, age = ${this.age}`;
 }
 
-const s1 = new (Student as any)('elite', 23);
-
+const s1 = new Student('elite', 23);
 log(s1.getInfos())
+// log(Student.getInfos())
+
+log(s1.getAge())
+log(s1.getName())
+
+// log(Student.getAge())
+// log(Student.getName())
+
+// const s1 = new (Student as any)('elite', 23);
+// log(s1.getInfos())
 
 // let s1: Person = new Student('elite', 23);
 // const s1 = new Student('elite', 23);
