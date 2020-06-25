@@ -30,6 +30,7 @@ const useFetch = (url = ``) => {
     loading: true,
   });
   useEffect(() => {
+    // 取消 promise 请求
     return () => {
       // component unmount
       isCurrent.current = false;
@@ -51,6 +52,7 @@ const useFetch = (url = ``) => {
         })
       }
     })
+    // clear ?
     return () => {
       cleanup
     }
