@@ -26,16 +26,16 @@
 const log = console.log;
 
 // Generator
-const  = (datas = [], debug = false) => {
+const App = (datas = [], debug = false) => {
   let result = ``;
   // do something...
   return result;
 };
 
 
-export default ;
+export default App;
 export {
-  ,
+  App,
 };
 
 /*
