@@ -1,5 +1,15 @@
 // structural-type-system 结构性类型系统
 
+/*
+
+One of TypeScript’s core principles is that type checking focuses on the shape that values have. This is sometimes called “duck typing” or “structural typing”.
+
+
+TypeScript 的核心原则之一是类型检查侧重于值的形状。这有时被称为“鸭子类型”或“结构类型”。
+
+
+
+*/
 
 interface Point {
   x: number;
