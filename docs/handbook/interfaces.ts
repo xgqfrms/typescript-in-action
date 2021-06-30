@@ -17,12 +17,11 @@ let myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);
 
 */
-
 interface LabeledValue {
   label: string;
 }
 
-// 使用 interface 描述参数的类型
+// 1. 使用 interface 描述参数的类型
 function printLabel(labeledObj: LabeledValue) {
   console.log(labeledObj.label);
 }
@@ -30,7 +29,7 @@ function printLabel(labeledObj: LabeledValue) {
 let myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);
 
-// Optional Properties
+// 2. Optional Properties / 可选属性
 interface SquareConfig {
   color?: string;
   width?: number;
@@ -52,3 +51,25 @@ function createSquare(config: SquareConfig): { color: string; area: number } {
 }
 
 let mySquare = createSquare({ color: "black" });
+
+// 3. Readonly properties / 只读属性
+
+interface Point {
+  readonly x: number;
+  readonly y: number;
+}
+
+let p1: Point = { x: 10, y: 20 };
+p1.x = 5;
+// Cannot assign to 'x' because it is a read-only property.ts(2540)
+
+/*
+
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+
+declare let p1: Point;
+
+*/
