@@ -40,7 +40,10 @@ interface SquareConfig {
 function createSquare(config: SquareConfig): { color: string; area: number } {
   let newSquare = { color: "white", area: 100 };
   if (config.color) {
-    newSquare.color = config.color;
+    // newSquare.color = config.color;
+    newSquare.color = config.calor;
+    // Property 'calor' does not exist on type 'SquareConfig'. Did you mean 'color'?ts(2551)
+    // interfaces.ts(35, 3): 'color' is declared here.
   }
   if (config.width) {
     newSquare.area = config.width * config.width;
