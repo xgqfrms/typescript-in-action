@@ -73,3 +73,22 @@ interface Point {
 declare let p1: Point;
 
 */
+
+
+// ReadonlyArray<T>  same as Array<T> 泛型
+
+let arr: number[] = [1, 2, 3, 4];
+let ro: ReadonlyArray<number> = arr;
+
+ro[0] = 12;
+// Index signature in type 'readonly number[]' only permits reading.ts(2542)
+
+ro.push(5);
+// Property 'push' does not exist on type 'readonly number[]'.ts(2339)
+
+ro.length = 100;
+// Cannot assign to 'length' because it is a read-only property.ts(2540)
+// (property) ReadonlyArray<number>.length: any
+
+arr = ro;
+// The type 'readonly number[]' is 'readonly' and cannot be assigned to the mutable type 'number[]'.ts(4104)
