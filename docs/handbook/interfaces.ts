@@ -92,3 +92,12 @@ ro.length = 100;
 
 arr = ro;
 // The type 'readonly number[]' is 'readonly' and cannot be assigned to the mutable type 'number[]'.ts(4104)
+
+
+/*
+
+
+declare let arr: number[];
+declare let ro: ReadonlyArray<number>;
+
+*/
