@@ -25,13 +25,6 @@ for (const [key, value] of formData.entries()) {
     console.log('key, value =', key, value);
 }
 
-// 2. FormData 转 URLSearchParams
-// const queryString = new URLSearchParams(forData);
-// console.log('queryString.toString() =', queryString.toString());
-
-// for (const [key, value] of queryString.entries()) {
-//     console.log('key, value =', key, value);
-// }
 
 /*
 
@@ -45,6 +38,29 @@ key, value = description abc
 key, value = title 111
 key, value = title 222
 
+
+*/
+
+
+// 2. FormData 转 URLSearchParams
+const queryString = new URLSearchParams(formData);
+console.log('queryString.toString() =', queryString.toString());
+
+for (const [key, value] of queryString.entries()) {
+    console.log('key, value =', key, value);
+}
+
+/*
+
+✅ 实现 重复 key (title / description)
+
+queryString.toString() = creative_id=4838&creative_word_ids=&description=zzz&description=abc&title=111&title=222
+key, value = creative_id 4838
+key, value = creative_word_ids
+key, value = description zzz
+key, value = description abc
+key, value = title 111
+key, value = title 222
 
 */
 
