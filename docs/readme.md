@@ -46,3 +46,30 @@ $ ./node_modules/typescript/bin/tsc -v
 # Version 4.4.2
 
 ```
+
+https://github.com/xgqfrms/typescript-in-action/issues/19
+
+
+## fix: Duplicate function implementation.ts(2393)
+
+
+```ts
+// ✅ 模块化
+export {};
+
+// 同名 declare, function, class, interface ...
+
+```
+
+## test
+
+> TS => JS
+
+```sh
+# $ ./node_modules/typescript/bin/tsc ./filename.ts
+$ ./node_modules/typescript/bin/tsc ./String-vs-string.ts
+
+# $ ./node_modules/typescript/bin/tsc ./folder/*.ts
+$ ./node_modules/typescript/bin/tsc ./docs/handbook/basic-types/old/*.ts
+
+```
